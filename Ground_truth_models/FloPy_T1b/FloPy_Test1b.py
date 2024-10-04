@@ -2,7 +2,6 @@
 """
 Created on Tue May 30 12:38:05 2023
 First test of a flopy model for Modflow
-@author: ksil8584
 """
 
 from pathlib import Path
@@ -37,9 +36,8 @@ q = -1000
 rch_rate = 0
 
 ## Create FLoPy simulation object
-# work_dir = 'C:\\Users\\ksil8584\\OneDrive - The University of Sydney (Staff)\\Documents\\Modflow\mf6.4.1\\examples\\FloPy_T1'
 workspace = os.getcwd()
-mf6_path = "C:\\Users\\ksil8584\\OneDrive - The University of Sydney (Staff)\\Documents\\Modflow\mf6.4.1\\bin\\mf6.exe"
+mf6_path = "..\\Documents\\Modflow\mf6.4.1\\bin\\mf6.exe"
 name = "FloPy_Test1"
 sim = flopy.mf6.MFSimulation(
     sim_name=name, exe_name=mf6_path, version="mf6", sim_ws=workspace

@@ -81,7 +81,7 @@ for run in range(0,runs):
             #Hydrolic conductivity
             k = 1.0
 
-            mf6_path = "C:\\Users\\ksil8584\\OneDrive - The University of Sydney (Staff)\\Documents\\Modflow\mf6.4.1\\bin\\mf6.exe"
+            mf6_path = "..\\Documents\\Modflow\mf6.4.1\\bin\\mf6.exe"
             name = "FloPy_ModelS_T1b"
             sim = flopy.mf6.MFSimulation(
                 sim_name=name, exe_name=mf6_path, version="mf6", sim_ws=out_folder
